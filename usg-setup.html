@@ -1,27 +1,180 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Unifi Security Gateways and General Ubiquiti Networks Setup</title>
-    <meta name="keywords" content="networking, networks, unifi, ubiquiti, setup, unRaid, general">>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
-    <script src="/js/main.js"></script>
-</head>
-<body>
-    <header>
-        <nav>
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Unifi Security Gateways and General Ubiquiti Networks Setup</title>
+      <meta name="keywords" content="networking, networks, unifi, ubiquiti, setup, unRaid, general">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+      <script src="/js/main.js"></script>
+      <style>
+         table {
+         border-collapse: collapse;
+         }
+         #table2 td, #table2 th {
+         border: 1px solid black;
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="about.html">About</a></li>
+               <li><a href="/">Home</a></li>
+               <li><a href="about.html">About</a></li>
             </ul>
-        </nav>
-    </header>
-    
-    <main>
-        
-    </main>
-</body>
+         </nav>
+      </header>
+      <main>
+         <h1>
+            Unifi Security Gateways and General Ubiquiti Networks Setup
+         </h1>
+         <section>
+            <h2>
+               Ubiquiti Unifi Security Gateways (USG)
+            </h2>
+            <p>
+               From the previous <a href="https://ngocdai94.github.io/ap-switch.html">post</a>, I shared about what Unifi Access Point (AP) and Unifi PoE Switches are, and how they have been helping businesses such as schools and coporate companies to achieve a strong infrastructure network more efficient and cost lessly.
+            </p>
+            <p>
+               Having Unifi AP and Unifi PoE Switches are not a complete system. To get networking devices communicating between each others and get connected to the Internet, an <a href="https://en.wikipedia.org/wiki/Gateway_(telecommunications)">Internet Gateway Modem</a> from an Internet Service Provider (ISP) is needed. The Internet Gateway Modem, which is connected to the ISP, is generally a data cable from their server. That data cable can be either a coaxial cable, which is also called <a href="https://en.wikipedia.org/wiki/Broadband_networks">broadband network</a>, or a <a href="https://en.wikipedia.org/wiki/Optical_fiber">fiber optic</a> cable that can carry more than 100 Gbps data bandwidth. Depending on a service subscription that schools and companies subscribe, the Internet speed will be affected. Of course, higher speed will cost more :).
+            </p>
+            <p>
+               On top of that, security is also needed to ensure that devices inside the schools’ network or coporates’ network are safe and protected from virus and hackers. Ubiquiti Networks also make security routers. Currently, USG and USG Pro are the top products by Ubiquiti Networks. Below is the photo of USG (square) and USG Pro (rectangle).
+            </p>
+            <figure>
+               <img src="\imgs\usg.jpg" alt="Unifi Security Gateways"> 
+               <figcaption>1. Unifi Security Gateway and Unifi Security Gateway Pro</figcaption>
+            </figure>
+            <table style="width:100%">
+               <tr>
+                  <th></th>
+                  <th>USG</th>
+                  <th>USG Pro</th>
+               </tr>
+               <tr>
+                  <td>Processor</td>
+                  <td>Dual-Core 500 MHz, MIPS64 with Hardware Acceleration for Packet Processing</td>
+                  <td>Dual-Core 1 GHz, MIPS64 with Hardware Acceleration for Packet Processing</td>
+               </tr>
+               <tr>
+                  <td>Memory</td>
+                  <td>512 MB DDR2 RAM</td>
+                  <td>2 GB DDR3 RAM</td>
+               </tr>
+               <tr>
+                  <td>Networking Interfaces Serial Console Port Data Ports</td>
+                  <td>(1) RJ45 Serial Port <br>(3) 10/100/1000 Ethernet Ports</td>
+                  <td>(1) RJ45 Serial Port <br>(2) 10/100/1000 RJ45 LAN Ports <br>
+                     (2) 1 Gbps RJ45/SFP Combination WAN Ports
+                  </td>
+               </tr>
+            </table>
+            <p>
+               At a glance, Unifi Security Gateway Pro has more processor power, more <a href="https://en.wikipedia.org/wiki/Random-access_memory">Random Access Memory (RAM)</a>, and more ethernet ports to process more clients at the same time. Unifi Security Gateway is a small compact security gateway. It is designed for home and small businesses that have less than 500 clients. In the other hand, USG Pro is bigger and faster, and it is often mounted on a <a href="https://en.wikipedia.org/wiki/19-inch_rack">network rack</a> along with other networking devices such as switches, server computers, etc.
+            </p>
+         </section>
+         <section>
+            <h2>
+               General Ubiquiti Networks Setup
+            </h2>
+            <h3>
+               Network Schematic
+            </h3>
+            <p>
+               The schematic below is an example of how all the Ubiquiti devices are connected together for a small business. To get easy to follow the schematic, it has been colored code to reflect a physical ethernet connection among devices. The orange lines are the 100 Mbps ethernet connections, the blue ones are 1 Gbps ethernet connections, the green one is 10 Gbps ethernet connection, and the red ones are powered cords.  
+            </p>
+            <figure>
+               <img src="/imgs/setup.jpg" alt="Network Deloyment Setup">
+               <figcaption>2. Network Deployment</figcaption>
+            </figure>
+            <h3>
+               Unifi Access Points
+            </h3>
+            <p>
+               The setup has a Modem to get connected to the Internet, one Unifi Security Gateway, one Unifi PoE Switch 48-Port, several <a href="https://www.ui.com/unifi/unifi-ap-ac-pro/"> Unifi AC Access Point</a>, several <a href="https://inwall.ui.com/">Unifi AC In-Wall Access Point</a>. The Unifi AC In-Wall Access Point is the Access Point that can be mounted in a wall, where the Unifi AC Access Points cannot be mounted.
+            </p>
+            <h3>
+               Power Over Ethernet (PoE) Cameras
+            </h3>
+            <p>
+               Besides the Access Points, the setup also has several <a href="https://www.ui.com/unifi-video/unifi-video-camera-g3/">PoE Cameras</a>, which are made by Ubiquiti. These cameras are power by PoE, which can be mounted almost anywhere in a building. 
+            </p>
+            <h3>
+               Server Computer
+            </h3>
+            <p>
+               Moreover, the setup has a server computer, which is called Kakaroto Data Center, to host a web server, storage, and Network Video Recording system. The operating system of Kakaroto Data Center is unRaid, which a Unix-like system. unRaid’s user interface is very friendly and easy to use. The unRaid operating system is designed to host multiple virtual machines. Below is the specifications of the Kakaroto Data Center in the setup.
+            </p>
+            <table id="table2">
+               <!-- <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  </tr> -->
+               <tr>
+                  <td>Server Motherboard</td>
+                  <td><a href="https://www.supermicro.com/products/motherboard/Xeon/C236_C232/X11SSH-CTF.cfm">Supermicro (X11SSH-CTF)</a></td>
+               </tr>
+               <tr>
+                  <td>Server Chassis</td>
+                  <td><a href="http://www.supermicro.com/products/chassis/3U/835/SC835TQ-R920B">Supermicro SC835TQ-R920B</a></td>
+               </tr>
+               <tr>
+                  <td>Operating System</td>
+                  <td><a href="https://lime-technology.com/">unRaid OS</a></td>
+               </tr>
+               <tr>
+                  <td>Processor</td>
+                  <td><a href="https://ark.intel.com/products/97478/Intel-Xeon-Processor-E3-1275-v6-8M-Cache-3_80-GHz">Intel Xeon E3 v6</a></td>
+               </tr>
+               <tr>
+                  <td>Memory</td>
+                  <td><a href="http://store.supermicro.com/memory/ddr4/16gb-ddr4-2400-mem-dr416l-sl01-eu24.html">32GB of 2400MHz DDR4 ECC UDIMM<br>Expandable up to 64 GB</a></td>
+               </tr>
+               <tr>
+                  <td>Storage</td>
+                  <td>
+                     <p>
+                        Cache Storage:
+                     </p>
+                     <ul>
+                        <li>
+                           2TB <a href="http://www.samsung.com/semiconductor/minisite/ssd/product/consumer/850evo/">Samsung SSD</a>
+                        </li>
+                     </ul>
+                     <p>
+                        Main Storage:
+                     </p>
+                     <ul>
+                        <li>5x <a href="http://store.supermicro.com/hard-drive/3-5/6tb-hdd-t6000-st6000nm0235.html">6 TB SATA HDD Seagate</a></li>
+                     </ul>
+                  </td>
+               </tr>
+               <tr>
+                  <td>Network</td>
+                  <td>Dual LAN with Intel® X550 10GBase-T Ethernet Controller</td>
+               </tr>
+            </table>
+            <h3>
+               Unifi Cloud Key
+            </h3>
+            <p>
+               The setup also has the <a href="https://www.ui.com/unifi/unifi-cloud-key/">Unifi Cloud Key</a> to run a software defined network to control all of the Ubiquiti devices. 
+            </p>
+            <h3>
+               Battery Backup
+            </h3>
+            <p>
+               Networking devices are known to be sensitive with power surge and power outage, to make sure the networking devices are still running on an outage event, these devices are connected to a battery backup which allows all the networking devices continue running during the power outage so that an administrator has enough time to shut down them properly.
+            </p>
+            <h3>
+               In Conclusion
+            </h3>
+            <p>
+               This is a general Ubiquiti Networks and scalable for a small business infrastructure setup. In other words, as the business grows, more networking devices such as switches, access points and cameras can be added to the existing system without reconfiguring anything.
+            </p>
+         </section>
+      </main>
+   </body>
 </html>

@@ -25,6 +25,10 @@ h6 {
 	font-weight: 600;
 }
 
+h1, figcaption{
+	text-align: center;
+}
+
 a {
 	text-decoration: none;
 	color: #0F0FFF;
@@ -41,7 +45,7 @@ a:hover {
 }
 
 main {
-	width: 98%;
+	width: 80%;
 	margin: 1% auto;
 }
 
@@ -83,6 +87,15 @@ ul.topnav li.icon {
 	display: none;
 }
 /*----- END NAVIGATION -----*/
+
+/*----- IMAGES FORMAT -----*/
+img {
+	height: auto;
+	width: 70%;
+	display: block;
+	margin: 0 auto;
+}
+/*----- END IMAGE FORMAT -----*/
 
 /* START RESPONSIVE STYLES */
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */

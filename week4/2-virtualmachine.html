@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Virtual Machines on unRaid Operating Systems</title>
+      <meta name="keywords" content="unraid, operating, system, os">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+      <script src="/js/main.js"></script>
+   </head>
+   <body>
+    <header>
+        <nav>
+            <ul class="topnav" id="myTopnav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li class="icon"> <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a> </li>
+            </ul>
+        </nav>
+    </header>
+      <main>
+         <h1>
+            Virtual Machines on unRaid Operating Systems  
+        </h1>
+         <section>
+            <h2>
+               What is Virtual Machine?
+            </h2>
+            <p>
+                Virtual Machine is basically an operating system that is running on another host operating systems. It borrows resources on the host systems to run. The host machines can be any operating systems such as Ubuntu, unRaid, RedHat, Windows, etc. As long as the host machine’s CPU is powerful and supports <a href="https://en.wikipedia.org/wiki/Virtualization">Virtualization</a> or <a href="https://en.wikipedia.org/wiki/Hyper-V">Hyper-V</a>, it can host a virtual machine.            
+            </p>
+         </section>
+
+         <section>
+             <h2>
+                Benefits of Using Virtual Machines
+             </h2>
+
+             <p>
+                Virtual machines have a lot of benefits for educations and technology businesses. For educations, to teach students how to use an operating system, school IT Administrators tend to install a virtual machine on a physical desktop computer at the beginning of every quarter. The reason is that students will make the operating system’s files corrupted during the process of learning how to use a new operating system. Therefore, to prevent it the IT Administrators do not want to spend a lot of time fixing the host computers if they have file corrupted. However, they rather want to delete the virtual machines and install fresh ones.            
+            </p>
+
+            <p>
+                For technology companies such as Apple, Google, and Amazon, the virtual machines will allow software developers and software engineers to test and validate their new versions of a software before releasing to consumers.
+            </p>
+         </section>
+
+         <section>
+             <h2>
+                Typical Specifications of a Host Machine
+             </h2>
+            <ol>
+                <li> <strong>CPU</strong>
+                    <ul>
+                        <li>6 Cores 12 Threads by either Intel or AMD</li>
+                    </ul>
+                </li>
+                <li> <strong>Memory</strong>
+                    <ul>
+                        <li>32 Gigabyte (GB) of RAM</li>
+                    </ul>
+                </li>
+                <li> <strong>Storage</strong>
+                    <ul>
+                        <li>Main: 512 GB of <a href="https://en.wikipedia.org/wiki/Solid-state_drive">Solid State Drive (SSD)</a></li>
+                        <li>Data Storage: 1 Terabyte (1TB = 1,000 GB)</li>
+                    </ul>
+                </li>
+            </ol>
+            <p>(For more information about pricing, please visit <a href="https://unraid.net/pricing">unRaid Pricing</a>)</p>
+         </section>
+         <section>
+            <h2>
+                How To Create a Virtual Machine on unRaid?
+            </h2>
+            
+            <p>
+                First, an image disk is required to install. For the example, <a href="https://www.microsoft.com/en-us/software-download/windows10ISO">Windows 10 ISO image disk</a> will be used. Next, navigate to a “VMS” tab on the main unRaid’s home page.
+            </p>
+
+            <p>
+                Then, choose “ADD VM” option below.
+            </p>
+            <figure>
+                <img src="/imgs/vm-ui-1.png" alt="Virtual Machine Tab"><br>
+                <figcaption>1. Virtual Machine Tab</figcaption>
+            </figure>
+            
+            <p>
+                Next, choose the virtual machine to install.           
+            </p>
+            <figure>
+                <img src="/imgs/vm-ui-2.png" alt="Virtual Machine Add Button"><br>
+                <figcaption>2. Virtual Machine Add Button</figcaption>
+            </figure>
+            
+            <p>
+                When prompted, specify the location of the Windows ISO image file in the “OS Install ISO” path. The rest can leave by default. Then, click create and start the virtual machine installation process. 
+            </p>
+            <figure>
+                <img src="/imgs/vm-ui-3.png" alt="Virtual Machine Selections"><br>
+                <figcaption>3. Virtual Machine Selections</figcaption>
+            </figure>
+            
+            <p>
+                The Windows 10 will appear as shown after the installation is completed.
+            </p>
+            <figure>
+                <img src="/imgs/vm-ui-4.png" alt="Virtual Machine Selections"><br>
+                <figcaption>4. Virtual Machine Selections</figcaption>
+            </figure>
+         </section>
+
+         <section>
+             <h2>In Conclusion</h2>
+             <p>
+                As the world is moving to <a href="https://en.wikipedia.org/wiki/Cloud_computing">Cloud Computing</a> and <a href="https://en.wikipedia.org/wiki/Internet_of_things">Internet of Things (IoT)</a>, virtual machines have been using as a firewall and internet traffic monitor to track and prevent hackers stealing users’ information.  
+             </p>
+             <p>
+                The best practice when visiting a strange link is opening that link in a virtual machine so that bad guys on the Internet cannot get important files if the virtual machine is hacked.
+             </p>
+         </section>
+      </main>
+   </body>
+</html>

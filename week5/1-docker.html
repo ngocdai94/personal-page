@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Unraid Operating Systems (OS) - Dockers</title>
+      <meta name="keywords" content="unraid, operating, system, os, docker, container">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+      <script src="/js/main.js"></script>
+   </head>
+   <body>
+        <header>
+                <nav>
+                   <ul class="topnav" id="myTopnav">
+                      <li><a href="/">Home</a></li>
+                      <li><a href="/about.html">About</a></li>
+                      <li class="icon"> <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a> </li>
+                   </ul>
+                </nav>
+             </header>
+      <main>
+         <h1>
+            unRaid Operating System (OS) - Docker Containers
+         </h1>
+         <section>
+            <h2>
+               Dockers
+            </h2>
+            <p>
+               From the previous <a href="https://ngocdai94.github.io/week4/1-unraid.html">post</a>, I shared about unRaid Operating System, and its amazing features when it is using as a Networking Server and Network Attached Storage. Also, the unRaid’s ability to host multiple virtual machines to use as a software development environment, cyber security firewall to prevent hackers, and testing a malicious link from a stranger.
+            </p>
+            <p>
+                One of the other cool features from unRaid OS that I forgot to mention from the last post is <a href="https://www.docker.com/">Docker</a>, which has been a huge success in the software development, software development, and <a href="https://en.wikipedia.org/wiki/DevOps">DevOps</a> community.                
+            </p>
+        </section>
+
+        <section>
+            <h2>
+                What is Docker?
+            </h2>
+            <p>
+                As stated from Wikipedia, Docker “is a set of platform-as-a-service (PaaS) products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels. All containers are run by a single <a href="https://en.wikipedia.org/wiki/Kernel_(operating_system)">operating-system kernel</a> and are thus more lightweight than virtual machines” 
+            </p>
+
+            <p>
+                In other word, Docker is similar to virtual machine. It requires a host machine to host a Docker container, which is similar to a disk <a href="https://en.wikipedia.org/wiki/International_Organization_for_Standardization">International Organization for Standardization (ISO)</a> image file. The host machine needs to install a container reader to read the Docker container images.
+            </p>
+        </section>
+
+        <section>
+            <h2>
+                What is the benefits of using Docker?
+            </h2>
+            <p>
+                One of the main benefits of using Docker is that the host machine literally does not have to install any extra drivers to run Docker containers. Docker containers will handle all of the communication via its own channel of network using the Internet. Therefore, it allow fast deployment on multiple host machines. To help you understanding Docker easily, considering the example below.  
+            </p>
+            <p>
+                Imaging an IT Technician has to configure and install softwares to more than 100 of PCs in a day. There is absolutely now way the IT Technician can finish this job in a day. However, if the IT Technician uses Docker containers on all of the PCs, all of them will connect to a central host, which the IT Technician send a command to all the PCs to install software on the Docker containers.
+            </p>
+        </section>
+
+        <section>
+            <h2>How to use Docker on unRaid?</h2>
+            <p>
+                Surprisingly, unRaid Operating System comes with pre-installed Docker. To use it, all you have to do is to navigate to the SETTING tab and then choose the Docker icon.
+            </p>
+            <img src="/imgs/docker-1.png" alt="Docker Interface on Setting Page"><br>
+            <figcaption>1. Docker in SETTING Interface</figcaption>
+
+            <p>Next, make sure the selection box for Docker is enabled.</p>
+            <img src="/imgs/docker-2.png" alt="Docker Setting Page"><br>
+            <figcaption>2. Docker Setting Page</figcaption>
+
+            <p>After that, you can navigate to the APPS tab to choose the built-in container for the unRaid OS, or you can import your own Docker container from the DOCKER tab.</p>
+            <img src="/imgs/docker-3.png" alt="Buil-in Docker Containers"><br>
+            <figcaption>3. Built-in Docker Containers</figcaption>
+        </section>
+      </main>
+   </body>
+</html>

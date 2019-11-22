@@ -98,6 +98,9 @@ img {
 /*----- END IMAGE FORMAT -----*/
 
 /* final blod format */
+#netgear {
+	width: 30%;
+}
 #final li{
 	font-weight: 600;
 }

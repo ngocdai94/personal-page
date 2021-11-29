@@ -25,7 +25,10 @@
 	</noscript>
 </head>
 
-<main>  
+<main>
+    {% include_relative /includes/header.html %}
+
+
     <section class="projectPage">
         <h1>IMAGE PROCESSING WITH IoT</h1>
         <p>Undergraduate research assistant to create an image processing project for students.</p>
@@ -75,6 +78,8 @@
             <p>I researched on algorithms and methods which are written in Image Processing Toolbox and Computer Vision Toolbox documentation on MatLab. Then, I designed and tested the coin counter program to make sure the coin counter works. Finally, I wrote a detail project's instruction to guide students on how to program it.</p>
         </div>
     </section>
+
+    {% include_relative /includes/footer.html %}
 </main>
 
 </html>

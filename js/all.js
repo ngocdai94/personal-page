@@ -85,7 +85,8 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
-/*-------------------------------------------------- ENDS ---------------------------------------------*/
+/*-------------------------------------------------- 
+ENDS ---------------------------------------------*/
 
 /**
  * Load lazy load
@@ -102,8 +103,8 @@ $(function() {
 });
 
 
- /*==================================================================
-[ Validate ]*/
+/*-------------------------------------------------- 
+FORM VALIDATION ------------------------------------*/
 let input = $('.validate-input .input100');
 
 $('.validate-form').on('submit',function(){
@@ -157,3 +158,10 @@ $('#frown').hover(function (){
 }, function() {
     $('.container-404-overlay').css("opacity", 1);
 });
+
+/*--------------- 
+Load Header and Footer --------- */
+// $(function() {
+//     $("#includeHeader").load("/includes/header.html"); 
+//     $("#includeFooter").load("/includes/footer.html"); 
+// });

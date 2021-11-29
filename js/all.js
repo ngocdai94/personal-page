@@ -103,39 +103,57 @@ $(function() {
 
 
  /*==================================================================
-// [ Show / hide pop-up ]*/
-// if (!navigator.userAgent.match(/(\(iPod|\(iPhone|\(iPad)/)) { // don't show contact form on iOS
-//     $('.btn-hide-contact100').on('click', function(){
-//         for(var i=0; i<input.length; i++) {
-//             hideValidate(input[i]);
-//         }
+[ Validate ]*/
+let input = $('.validate-input .input100');
 
-//         $('html,body').css("overflow", "auto");
-//         $('.container-contact100').css("display", "none");
-//         $('.container-contact100').fadeOut(300);
-//     });
+$('.validate-form').on('submit',function(){
+    let check = true;
 
-//     $('.btn-show-contact100').on('click', function(){
-//         $('html,body').css("overflow", "hidden");
-//         $('.container-contact100').css("display", "flex");
-//         $('.container-contact100').fadeIn(300);
-//     });
+    for(let i=0; i<input.length; i++) {
+        if(validate(input[i]) == false){
+            showValidate(input[i]);
+            check=false;
+        }
+    }
+    if (check == true){
+        $('.container-contact100').css("display", "none");
+        $('.container-contact100').fadeOut(300);
+    }
+    return check;
+});
 
-//     $('.inline-show-contact100').on('click', function(){
-//         $('html,body').css("overflow", "hidden");
-//         $('.container-contact100').css("display", "flex");
-//         $('.container-contact100').fadeIn(300);
-//     });
-// }
+$('.validate-form .input100').each(function(){
+    $(this).focus(function(){
+        hideValidate(this);
+    });
+});
 
-// $('.btn-hide-success100').on('click', function(){
-//     $('html,body').css("overflow", "auto");
-//     $('.container-success100').css("display", "none");
-//     $('.container-success100').fadeOut(300);
-// });
+function validate (input) {
+    if($(input).attr('name') == '_replyto') {
+        if($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
+            return false;
+        }
+    } else {
+        if($(input).val().trim() == ''){
+            return false;
+        }
+    }
+}
 
-// $('.hide-success100').on('click', function(){
-//     $('html,body').css("overflow", "auto");
-//     $('.container-success100').css("display", "none");
-//     $('.container-success100').fadeOut(300);
-// });
+function showValidate(input) {
+    let thisAlert = $(input).parent();
+    $(thisAlert).addClass('alert-validate');
+}
+
+function hideValidate(input) {
+    let thisAlert = $(input).parent();
+    $(thisAlert).removeClass('alert-validate');
+}
+
+/*==================================================================
+[ 404 ] */
+$('#frown').hover(function (){
+    $('.container-404-overlay').css("opacity", 0);
+}, function() {
+    $('.container-404-overlay').css("opacity", 1);
+});

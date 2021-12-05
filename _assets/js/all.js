@@ -159,9 +159,7 @@ $('#frown').hover(function (){
     $('.container-404-overlay').css("opacity", 1);
 });
 
-/*--------------- 
-Load Header and Footer --------- */
-// $(function() {
-//     $("#includeHeader").load("/includes/header.html"); 
-//     $("#includeFooter").load("/includes/footer.html"); 
-// });
+/* Get Full Year */
+$(function() {
+    $('#current-year').html(new Date().getFullYear());
+});

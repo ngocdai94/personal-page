@@ -1,0 +1,67 @@
+<header>
+    <div class="headerBackgroundImage"></div>
+    <nav>
+        <ul class="topnav" id="myTopnav">
+            <li><a href="/">Home</a></li>
+            <li><a href="http://dlresume.dai-nguyen.com" download="Dai Nguyen - Resume">Download Resume</a></li>
+            <li><a href="javascript:void(0);" class="site-btn btn-show-contact100"
+                    onclick="showContactForm()">Contact me</a></li>
+            <li class="icon"> <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a> </li>
+
+        </ul>
+    </nav>
+
+    <section class="container-contact100" id="contact-popup" style="display: none;">
+        <div class="wrap-contact100">
+            <!-- <a class="btn-hide-contact100" href="javascript:void(0)" onclick="closeContactForm()"> 
+                <i class="fas fa-times"></i> 
+            </a> -->
+            <div class="x-location">
+                <a class="btn-hide-contact100" href="javascript:void(0)" onclick="closeContactForm()"> 
+                    <i class="fas fa-times"></i> 
+                </a>
+            </div>
+
+            <form class="contact100-form validate-form" action="https://formspree.io/f/xknywbao" method="POST">
+                
+                
+                <span class="contact100-form-title">
+                    <h2>Let's get in touch!</h2>
+                </span>
+
+                <div class="wrap-input100 validate-input" data-validate="Required"> 
+                    <input class="input100" type="text" name="name" placeholder="Name" data-bind="textInput: senderName"> 
+                    <span class="focus-input100"></span> 
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Valid e-mail required"> 
+                    <input class="input100" type="text" name="_replyto" placeholder="E-mail" data-bind="textInput: senderEmail">
+                    <span class="focus-input100"></span> 
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Required"> 
+                    <input class="input100" type="text" name="_subject" placeholder="Subject" data-bind="textInput: messageSubject">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Please leave a message">
+                    <textarea class="input100" name="message" placeholder="Your message here" data-bind="textInput: senderMessage"></textarea> 
+                    <span class="focus-input100"></span>
+
+                </div> 
+
+                <input type="hidden" name="_next" value="https://dai-nguyen.com?success"> 
+                <span class="note-input100"> <small>Help me fight spams!</small> <small>You will be taken to a reCAPTCHA page upon submission.</small><br> <small>To send message from your favorite mail client instead, 
+                <a data-bind="attr: { href: url }" href="mailto:hello@dai-nguyen.com?subject=&amp;body=">click here</a>.</small> </span> <br>
+
+                <div class="container-contact100-form-btn"> 
+                    <button class="contact100-form-btn"> 
+                        <span>
+                            <i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i> Send 
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+</header>

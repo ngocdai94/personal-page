@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title> {{ page.title }}</title>
+
+
+    <!-- CSS & FontAwesome-->
+    <link rel="preload" href="/_assets/css/all.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+	<!-- Javascript -->
+	<script defer src="/_assets/js/all.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics & Google Optimize-->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127509718-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-127509718-1');
+	</script>
+
+	<!-- Load CSS & FontAwesome When JavaScript is Disabled -->
+	<noscript>
+		<link rel="stylesheet" type="text/css" href="/css/all.css">
+	</noscript>
+</head>
+
+<main> 
+    {% include header.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+</main>
+</html>

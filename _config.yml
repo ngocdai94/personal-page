@@ -1,1 +1,15 @@
-theme: jekyll-theme-slate
+# theme: jekyll-theme-slate
+url: https://dai-nguyen.com
+compression: true
+assets:
+  digest: false
+  sources:
+    - _assets/css
+    - _assets/js
+    - _assets/imgs
+    - _assets/Josefin_Sans
+    - _assets/webfonts
+include:
+    - _assets
+    - _projects
+    

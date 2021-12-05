@@ -353,6 +353,10 @@ Contact Form -----------------------------------*/
     width: 100%;
 }
 
+.contact100-form-title p{
+    font-size: 1.5em;
+}
+
 .btn-hide-contact100 {
     /* opacity: 0.6;
     position: absolute;

@@ -353,6 +353,10 @@ Contact Form -----------------------------------*/
     width: 100%;
 }
 
+.contact100-form-title p{
+    font-size: 1.5em;
+}
+
 .btn-hide-contact100 {
     /* opacity: 0.6;
     position: absolute;
@@ -571,6 +575,7 @@ Contact Form End ---------------------------------*/
         width: 45%;
     }
     .profilePhoto {
+        max-width: 470px;
         width: 100%;
         margin-top: 55px;
     }
@@ -804,7 +809,3 @@ all.css end ---------------------------------*/
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 @font-face{font-family:"Font Awesome 5 Free";font-style:normal;font-weight:900;font-display:block;src:url(/_assets/webfonts/fa-solid-900.eot);src:url(/_assets/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(/_assets/webfonts/fa-solid-900.woff2) format("woff2"),url(/_assets/webfonts/fa-solid-900.woff) format("woff"),url(/_assets/webfonts/fa-solid-900.ttf) format("truetype"),url(/_assets/webfonts/fa-solid-900.svg#fontawesome) format("svg")}.fa,.fas{font-family:"Font Awesome 5 Free";font-weight:900}
-
-iframe {
-        border: none;
-}

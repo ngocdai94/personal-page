@@ -525,10 +525,10 @@ Contact Form End ---------------------------------*/
         padding: 120px;
     }
     .no-webp .headerBackgroundImage {
-        background-image: url("/imgs/logoBackground_1.jpg");
+        background-image: url("/_assets/imgs/logoBackground_1.jpg");
     }
     .webp .headerBackgroundImage {
-        background-image: url("/imgs/logoBackground_1.webp");
+        background-image: url("/_assets/imgs/logoBackground_1.webp");
     }
     .leftColumn {
         float: left;
@@ -557,10 +557,10 @@ Contact Form End ---------------------------------*/
         padding: 100px;
     }
     .no-webp .headerBackgroundImage {
-        background-image: url("/imgs/logoBackground_1.jpg");
+        background-image: url("/_assets/imgs/logoBackground_1.jpg");
     }
     .webp .headerBackgroundImage {
-        background-image: url("/imgs/logoBackground_1.webp");
+        background-image: url("/_assets/imgs/logoBackground_1.webp");
     }
     .leftColumn {
         float: left;
@@ -596,10 +596,10 @@ Contact Form End ---------------------------------*/
         padding: 60px;
     }
     .no-webp .headerBackgroundImage {
-        background-image: url("/imgs/logoBackground_2.jpg");
+        background-image: url("_assets/imgs/logoBackground_2.jpg");
     }
     .webp .headerBackgroundImage {
-        background-image: url("/imgs/logoBackground_2.webp");
+        background-image: url("/_assets/imgs/logoBackground_2.webp");
     }
     main {
         margin: 6% auto;
@@ -750,14 +750,14 @@ Contact Form End ---------------------------------*/
     font-style: normal;
     font-weight: 400;
     font-display: fallback;
-    src: url(/assets/Josefin_Sans/JosefinSans-Regular.ttf);
+    src: url(/_assets/Josefin_Sans/JosefinSans-Regular.ttf);
 }
 @font-face {
     font-family: "Josefin Sans";
     font-style: normal;
     font-weight: 600;
     font-display: fallback;
-    src: url(/assets/Josefin_Sans/JosefinSans-SemiBold.ttf);
+    src: url(/_assets/Josefin_Sans/JosefinSans-SemiBold.ttf);
 }
 /*------------------------------------- 
 all.css end ---------------------------------*/
@@ -796,14 +796,14 @@ all.css end ---------------------------------*/
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
- @font-face{font-family:"Font Awesome 5 Brands";font-style:normal;font-weight:400;font-display:block;src:url(/assets/webfonts/fa-brands-400.eot);src:url(/assets/webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"),url(/assets/webfonts/fa-brands-400.woff2) format("woff2"),url(/assets/webfonts/fa-brands-400.woff) format("woff"),url(/assets/webfonts/fa-brands-400.ttf) format("truetype"),url(/assets/webfonts/fa-brands-400.svg#fontawesome) format("svg")}.fab{font-family:"Font Awesome 5 Brands";font-weight:400}
+ @font-face{font-family:"Font Awesome 5 Brands";font-style:normal;font-weight:400;font-display:block;src:url(/_assets/webfonts/fa-brands-400.eot);src:url(/_assets/webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"),url(/_assets/webfonts/fa-brands-400.woff2) format("woff2"),url(/_assets/webfonts/fa-brands-400.woff) format("woff"),url(/_assets/webfonts/fa-brands-400.ttf) format("truetype"),url(/_assets/webfonts/fa-brands-400.svg#fontawesome) format("svg")}.fab{font-family:"Font Awesome 5 Brands";font-weight:400}
 
 /* solid.min.css */
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
-@font-face{font-family:"Font Awesome 5 Free";font-style:normal;font-weight:900;font-display:block;src:url(/assets/webfonts/fa-solid-900.eot);src:url(/assets/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(/assets/webfonts/fa-solid-900.woff2) format("woff2"),url(/assets/webfonts/fa-solid-900.woff) format("woff"),url(/assets/webfonts/fa-solid-900.ttf) format("truetype"),url(/assets/webfonts/fa-solid-900.svg#fontawesome) format("svg")}.fa,.fas{font-family:"Font Awesome 5 Free";font-weight:900}
+@font-face{font-family:"Font Awesome 5 Free";font-style:normal;font-weight:900;font-display:block;src:url(/_assets/webfonts/fa-solid-900.eot);src:url(/_assets/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),url(/_assets/webfonts/fa-solid-900.woff2) format("woff2"),url(/_assets/webfonts/fa-solid-900.woff) format("woff"),url(/_assets/webfonts/fa-solid-900.ttf) format("truetype"),url(/_assets/webfonts/fa-solid-900.svg#fontawesome) format("svg")}.fa,.fas{font-family:"Font Awesome 5 Free";font-weight:900}
 
 iframe {
         border: none;

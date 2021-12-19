@@ -87,6 +87,15 @@ ul.topnav li.icon {
 .profileSection {
     width: 60%;
 }
+.profilePhoto picture img{
+    width: 100%;
+    aspect-ratio: 1/3;
+}
+.headerBackgroundImage {
+    background-image: url("/_assets/imgs/logoBackground_1.svg");
+    background-size: cover;
+    background-position: center;
+}
 #moreAboutMeButton {
     background-color: #484848;
     color: #f5f5f5;
@@ -528,12 +537,6 @@ Contact Form End ---------------------------------*/
         background-size: cover;
         padding: 120px;
     }
-    .no-webp .headerBackgroundImage {
-        background-image: url("/_assets/imgs/logoBackground_1.jpg");
-    }
-    .webp .headerBackgroundImage {
-        background-image: url("/_assets/imgs/logoBackground_1.webp");
-    }
     .leftColumn {
         float: left;
         width: 55%;
@@ -543,7 +546,7 @@ Contact Form End ---------------------------------*/
         width: 45%;
     }
     .profilePhoto {
-        width: 100%;
+        /* width: 100%; */
         margin-top: 55px;
     }
     #moreAboutMe {
@@ -560,22 +563,16 @@ Contact Form End ---------------------------------*/
         background-size: cover;
         padding: 100px;
     }
-    .no-webp .headerBackgroundImage {
-        background-image: url("/_assets/imgs/logoBackground_1.jpg");
-    }
-    .webp .headerBackgroundImage {
-        background-image: url("/_assets/imgs/logoBackground_1.webp");
-    }
     .leftColumn {
         float: left;
         width: 50%;
     }
     .profileSection {
         float: left;
-        width: 45%;
+        width: 50%;
     }
     .profilePhoto {
-        max-width: 470px;
+        height: auto;
         width: 100%;
         margin-top: 55px;
     }
@@ -600,12 +597,6 @@ Contact Form End ---------------------------------*/
         background-size: cover;
         padding: 60px;
     }
-    .no-webp .headerBackgroundImage {
-        background-image: url("_assets/imgs/logoBackground_2.jpg");
-    }
-    .webp .headerBackgroundImage {
-        background-image: url("/_assets/imgs/logoBackground_2.webp");
-    }
     main {
         margin: 6% auto;
     }
@@ -619,6 +610,7 @@ Contact Form End ---------------------------------*/
         margin-top: -20px;
     }
     .profilePhoto {
+        height: auto;
         width: 100%;
         margin-top: 15px;
     }
